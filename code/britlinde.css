@@ -1,0 +1,477 @@
+/*
+Theme Name: Picasso Media
+Theme URI: http://www.picassomedia.de/
+Description: Brit Linde
+Author: Tung Le Huy
+Version: 1.0
+*/
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+ul {
+  list-style: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic&subset=latin,latin-ext);
+
+html {
+  background: #312f2b url("img/bg.jpg") no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  font: 300 13px/1.4 "Droid Sans";
+  color: #fff;
+  text-shadow: 0px 0px 0px #111111;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Droid Sans", sans-serif;
+  color: #fff;
+  font-weight: normal;
+  margin: 30px 0px 10px 0px;
+}
+h1 {
+  font-size: 25px;
+}
+h2 {
+  font-size: 20px;
+}
+h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #f9b200;
+}
+h4 {
+  font-size: 18px;
+  color: #f9b200;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #f9b200;
+  margin: 10px 0px 10px 0px;
+}
+
+a {
+  color: #f9b200;
+  text-decoration: underline;
+}
+a:hover {
+  color: #f0f0f0;
+}
+
+#head-mobile {
+  display: none;
+}
+
+#head {
+  padding-top: 3%;
+  width: 100%;
+}
+
+#logo {
+  position: relative;
+  width: 65%;
+  left: 5%;
+  z-index: 999;
+}
+
+#logo img {
+  width: 30%;
+}
+
+#header {
+  margin-top: -4%;
+}
+
+#header,
+#header img {
+  width: 100%;
+}
+
+#main-nav {
+  position: relative;
+  top: -250px;
+  float: right;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  overflow: hidden;
+  padding: 3px 0 0 0;
+  z-index: 9999;
+}
+#main-nav ul li {
+  height: 38px;
+}
+#main-nav ul li a {
+  position: relative;
+  left: 50px;
+  width: 300px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 20px 0 0 20px;
+  padding: 6px 10px 6px 10px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease 0s;
+  -webkit-box-shadow: 1px 1px 2px 0px #434343; /* WebKit */
+  -moz-box-shadow: 1px 1px 2px 0px #434343; /* Firefox */
+  box-shadow: 1px 1px 2px 0px #434343; /* Standard */
+  background: #39c1e4; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMzOWMxZTQiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMxNmI2ZGYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #39c1e4 50%, #16b6df 50%); /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(50%, #39c1e4),
+    color-stop(50%, #16b6df)
+  ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    top,
+    #39c1e4 50%,
+    #16b6df 50%
+  ); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(
+    top,
+    #39c1e4 50%,
+    #16b6df 50%
+  ); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #39c1e4 50%, #16b6df 50%); /* IE10+ */
+  background: linear-gradient(to bottom, #39c1e4 50%, #16b6df 50%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#39c1e4', endColorstr='#16b6df',GradientType=0 ); /* IE6-8 */
+}
+
+#main-nav ul li a:hover,
+#main-nav ul li.current-menu-item a {
+  left: 0;
+}
+
+#wrapper {
+  width: 100%;
+}
+
+#content {
+  width: 90%;
+  margin: 0 5% 0 5%;
+  display: inline-block;
+  margin-top: -190px; /* Main-Nav height */
+  padding-top: 20px;
+}
+
+#content ul {
+  list-style-type: disc;
+}
+
+#content-block {
+  width: 70%;
+  float: left;
+  font-family: "Lato", sans-serif;
+  word-break: break-strict;
+}
+
+#sidebar-block {
+  width: 30%;
+  float: left;
+  margin-right: -1px;
+}
+
+#sidebar {
+  width: 80%;
+  margin: 0 10% 0 10%;
+}
+
+#submenu-desktop {
+  margin-top: 35px;
+}
+
+#sidebar a,
+#submenu-mobile a {
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  text-decoration: none;
+}
+
+#sidebar a:hover,
+#submenu-mobile a:hover {
+  color: #f9b200;
+}
+
+ul.children,
+#sidebar ul.children {
+  list-style-type: disc;
+}
+
+.pagetitle {
+  border-bottom: 1px solid #f9b200;
+  margin-bottom: 10px;
+  color: #f9b200;
+  text-transform: uppercase;
+}
+
+#footer {
+  width: 90%;
+  margin: 10px 5% 20px 5%;
+  text-align: right;
+  word-spacing: 2px;
+  line-height: 300%;
+}
+
+#footer a {
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Source Sans Pro", sans-serif;
+}
+#footer a:hover {
+  color: #f9b200;
+}
+
+/* Kundenstimmen */
+
+/* a.kundenstimme {
+  float: left;
+  text-decoration: none;
+  font-size: 15px;
+} */
+.continues-parter {
+  display: flex;
+  margin-top: 1.5%;
+}
+.img-partner-iu {
+  padding-top: 39px;
+  margin-left: 3%;
+}
+a.kundenstimme {
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 15px;
+  padding-bottom: 7px;
+}
+.quadrat {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin-right: 40px;
+}
+.quadrat {
+  position: relative;
+}
+.quadrat i {
+  left: 40px;
+  position: absolute;
+  top: 35px;
+  color: #454545;
+  text-shadow: 1px 1px 1px #cfcfcf;
+}
+.quadrat.farbe1 {
+  background-color: #f5ce6b;
+}
+.quadrat.farbe2 {
+  background-color: #f9b200;
+}
+.quadrat.farbe3 {
+  background-color: #e89532;
+}
+.quadrat.farbe4 {
+  background-color: #d97703;
+}
+.quadrat.farbe5 {
+  background-color: #bb6704;
+}
+.quadrat.farbe6 {
+  background-color: #68b92c;
+}
+a.kundenstimme span {
+  width: 100px;
+  display: block;
+  text-align: center;
+  font-family: "Source Sans Pro";
+  color: #000000;
+}
+
+.pfeil {
+  width: 13px !important;
+  height: 11px !important;
+}
+
+#submenu-mobile {
+  display: none;
+}
+
+#submenu-desktop {
+  display: block;
+}
+
+#submenu-desktop ul {
+  line-height: 2;
+}
+
+#submenu-desktop .children {
+  line-height: 1;
+}
+
+.box {
+  border: 1px solid #f9b200;
+  padding: 10px;
+  color: #f9b200;
+}
+.orange,
+strong,
+b {
+  color: #f9b200;
+}
+hr {
+  width: 100%;
+  border-color: #f9b200;
+}
+th,
+td {
+  padding: 0 10px 0 10px;
+}
+
+@media screen and (max-width: 960px) {
+  #head-mobile {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: #4f4440;
+  }
+  #logo {
+    position: relative;
+    width: 79%;
+    left: 1%;
+    z-index: 999;
+  }
+  #navi img {
+    height: 50px;
+  }
+  #main-nav {
+    display: none;
+  }
+  #main-nav-mobile {
+    font-family: "Source Sans Pro", sans-serif;
+    position: absolute;
+    display: none;
+    z-index: 999;
+    background: #4f4440;
+    width: 100%;
+    z-index: 9999;
+  }
+  .menu {
+    list-style: none;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-item {
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    padding-top: 10px;
+    border-bottom: #93827b 1px solid;
+  }
+  .menu-item a {
+    color: #00b5e2;
+    width: 100%;
+    text-decoration: none;
+  }
+
+  #content {
+    margin-top: 0;
+  }
+  #content-block {
+    width: 100%;
+    float: none;
+  }
+
+  #sidebar-block {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
+
+  #sidebar {
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+
+  #submenu-mobile {
+    display: block;
+  }
+
+  #submenu-desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #content img {
+    width: 100% !important;
+  }
+}
